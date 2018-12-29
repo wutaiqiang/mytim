@@ -111,7 +111,7 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "是兄弟就来砍我！一刀999！";
             this.linkLabel1.UseWaitCursor = true;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);
             // 
             // linkLabel2
             // 
@@ -123,7 +123,7 @@
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "介是你没有玩过的船新版本！";
             this.linkLabel2.UseWaitCursor = true;
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel2_LinkClicked);
             // 
             // chat
             // 

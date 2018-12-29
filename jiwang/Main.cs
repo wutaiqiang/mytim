@@ -65,9 +65,11 @@ namespace jiwang
             this.listView1.Columns.AddRange(new ColumnHeader[] { Ch0,Ch1, Ch2, Ch3 });
 
             Updata_list();
+            //监听他人发来的信息
+            Listen_s();
         }
 
-        /**根据文件生成list**/
+        #region 更新表单
         private void Updata_list()
         {
             this.listView1.Items.Clear();
@@ -94,11 +96,11 @@ namespace jiwang
                 if (flag == "n"||flag=="")
                 {
                     info[2] = "Unknown";
-                    info[3] = "OffLine";
+                    info[3] = "Offline";
                 }
                 else if (flag=="Incorrect No."){
                     info[2] = flag;
-                    info[3] = "OffLine";
+                    info[3] = "Offline";
                 }
                 else{
                     info[2] = flag;
@@ -149,8 +151,9 @@ namespace jiwang
             return IP_receive_mess;
                        
         }
+        #endregion
 
-        /****注销****/
+        #region logout
         private void Logout()
         {
             string outmess = "logout" + User_name;
@@ -189,6 +192,7 @@ namespace jiwang
             this.Hide();
             Login tmp = new Login();
             tmp.Show();
+    
         }
         //关闭窗口注销
         private void Main_FormClosing_1(object sender, FormClosingEventArgs e)
@@ -198,6 +202,9 @@ namespace jiwang
             Login tmp = new Login();
             tmp.Show();
         }
+        #endregion
+
+        #region 好友增删
         //添加好友
         private void Fri_add_Click(object sender, EventArgs e)
         {
@@ -294,17 +301,96 @@ namespace jiwang
                 }
             }
         }
+        #endregion
 
-        //广告位招租
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        #region 广告位招租
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.huanqiu.com");
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LinkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("http://lanyue.tanwan.com/");
         }
+        #endregion
+
+        #region 监听
+       
+        public void Listen_s()
+        {
+            int listenport = 50000;
+            Socket tcp_server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            IPEndPoint serverIP = new IPEndPoint(User_ip, listenport);
+            tcp_server.Bind(serverIP);//阻塞模式
+            tcp_server.Listen(20);//最多处理20个排队
+            Console.WriteLine("异步开启监听...");
+            AsynAccept(tcp_server);//接受连接套接字
+        }
+        //接受连接,继续监听
+        public void AsynAccept(Socket tcpServer)
+        {
+            tcpServer.BeginAccept(asyncResult =>
+            {
+                Socket tcpClient = tcpServer.EndAccept(asyncResult);
+                Console.WriteLine("server<--<--{0}", tcpClient.RemoteEndPoint.ToString());
+                //AsynSend(tcpClient, "收到连接...");//发送消息
+                AsynAccept(tcpServer);//继续监听其余连接
+                AsynRecive(tcpClient);//监听信息
+            }, null);
+        }
+        //启动线程，界面跳转，接受信息
+        public void AsynRecive(Socket tcpClient)
+        {
+            byte[] data = new byte[1024];
+            try
+            {
+                tcpClient.BeginReceive(data, 0, data.Length, SocketFlags.None,
+                asyncResult =>
+                {
+                    int length = tcpClient.EndReceive(asyncResult);                    
+                    string recieve_mess = Encoding.UTF8.GetString(data, 0, data.Length);
+                    Console.WriteLine("server<--<--client:{0}",recieve_mess);
+                    Socket[] connected_socket = new Socket[1];//配合群聊使用，本来是单个套接字
+                    connected_socket[0] = tcpClient;//发起对话的对象
+                    //Thread sever_client = new Thread()
+                    //开启对话窗口，开始对话，传递参数
+                    //button3.Visible = true;
+                    string pass_mess;
+                    pass_mess = User_name + "," + recieve_mess;
+                    //与一个用户单聊
+                    Thread server_client_connection = new Thread(() => Application.Run(new Chat(pass_mess, connected_socket, 1)));
+                    server_client_connection.SetApartmentState(System.Threading.ApartmentState.STA);//单线程监听控制
+                    server_client_connection.Start();
+                }, null);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "警告", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        //查找对应的IP，发送广播信息
+        public Socket Chat_group(string userid, string broad)
+        {
+            string ip = IsOnline(userid);
+            IPEndPoint user_ip = new IPEndPoint(IPAddress.Parse(ip), 50000);
+            Socket user_tcp = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            
+            try
+            {
+                user_tcp.Connect(user_ip);
+            }
+            catch (SocketException)
+            {
+                MessageBox.Show("对方没有响应！", "警告", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return user_tcp;
+            }
+            byte[] data = Encoding.UTF8.GetBytes(broad);
+            user_tcp.Send(data);
+            return user_tcp;
+        }
+        #endregion
         //跳转到聊天界面
         private void Chat_Click(object sender, EventArgs e)
         {
@@ -315,8 +401,39 @@ namespace jiwang
             }
             else
             {
-                //MessageBox.Show("乐享沟通！", "注意", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //选中人是否在线
+                foreach (ListViewItem item in listView1.SelectedItems)
+                {
+                    if (item.SubItems[3].Text == "Offline")
+                    {
+                        MessageBox.Show("部分选中的好友不在线", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+                int connect_num = 0;
+                string broad_mess;//广播信息(学号)，包括本机地址;不同的对象信息不同
+                string headpart = User_name;//将自己的信息放入
+                Socket[] clients = new Socket[listView1.SelectedItems.Count];//建立套接字对象
+                foreach (ListViewItem item in listView1.SelectedItems)
+                {
+                    //所有人的学号，对每一个人广播群聊里其他人的信息
+                    broad_mess = User_name;
+                    foreach (ListViewItem item1 in listView1.SelectedItems)
+                    {
+                        if (item1.SubItems[1].Text != item.SubItems[1].Text)
+                            broad_mess = broad_mess + "," + item1.SubItems[1].Text;
+                    }
+                    //所有参与对话者，用来建立线程
+                    headpart = headpart + "," + item.SubItems[1].Text;
+                    //发送board信息
+                    clients[connect_num] = Chat_group(item.SubItems[1].Text, broad_mess);//群聊
+                    connect_num++;
+                }
                 
+                //开启对话框，多线程，开始对话
+                Thread server_client_connection = new Thread(() => Application.Run(new Chat(headpart, clients, connect_num)));
+                server_client_connection.SetApartmentState(System.Threading.ApartmentState.STA);//单线程监听控制
+                server_client_connection.Start();
             }
         }
     }
