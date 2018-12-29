@@ -146,7 +146,43 @@ namespace jiwang
                 //Username[0]为自己的名字
                 string show = Username[0] + "  " + DateTime.Now.ToString() + "\n" + send + "\n";
                 chat_rec.SelectionAlignment = HorizontalAlignment.Left;
-                chat_rec.AppendText(show);
+               
+                if (Regex.IsMatch(send, geshi))
+                {
+                    //显示日期                
+                    chat_rec.AppendText(Username[0] + "  " + DateTime.Now.ToString() + "\n");
+                    Bitmap bmp = jiwang.Properties.Resources.face__90_;
+                    switch (send)
+                    {
+                        case "--E76--": bmp = jiwang.Properties.Resources.face__76_; break;
+                        case "--E77--": bmp = jiwang.Properties.Resources.face__77_; break;
+                        case "--E79--": bmp = jiwang.Properties.Resources.face__79_; break;
+                        case "--E80--": bmp = jiwang.Properties.Resources.face__80_; break;
+                        case "--E81--": bmp = jiwang.Properties.Resources.face__81_; break;
+                        case "--E82--": bmp = jiwang.Properties.Resources.face__82_; break;
+                        case "--E83--": bmp = jiwang.Properties.Resources.face__83_; break;
+                        case "--E84--": bmp = jiwang.Properties.Resources.face__84_; break;
+                        case "--E86--": bmp = jiwang.Properties.Resources.face__86_; break;
+                        case "--E87--": bmp = jiwang.Properties.Resources.face__87_; break;
+                        case "--E88--": bmp = jiwang.Properties.Resources.face__88_; break;
+                        case "--E90--": bmp = jiwang.Properties.Resources.face__90_; break;
+                        case "--E91--": bmp = jiwang.Properties.Resources.face__91_; break;
+                        default: break;
+                    }
+
+                    Clipboard.SetDataObject(bmp, false);//将图片放在剪贴板中
+
+                    if (chat_rec.CanPaste(DataFormats.GetFormat(DataFormats.Bitmap)))
+
+                        chat_rec.Paste();//粘贴数据
+
+                    chat_rec.AppendText("\n");
+                }
+                else
+                {
+                    chat_rec.AppendText(show + "\n");
+                }
+
                 judge = false;
                 my_txt.Text = null;
                 //遍历，向其他人发送
@@ -201,7 +237,7 @@ namespace jiwang
 
                 if (Regex.IsMatch(a, geshi))
                 {   //显示日期                
-                    chat_rec.AppendText(recvStr.Substring(1,len-9));
+                    chat_rec.AppendText(recvStr.Substring(0,len-8));
                     Bitmap bmp = jiwang.Properties.Resources.face__90_;
                     switch (a)
                     {

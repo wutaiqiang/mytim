@@ -75,9 +75,9 @@
             // 
             // fil_send
             // 
-            this.fil_send.Location = new System.Drawing.Point(985, 582);
+            this.fil_send.Location = new System.Drawing.Point(687, 633);
             this.fil_send.Name = "fil_send";
-            this.fil_send.Size = new System.Drawing.Size(127, 53);
+            this.fil_send.Size = new System.Drawing.Size(161, 66);
             this.fil_send.TabIndex = 1;
             this.fil_send.Text = "发送文件";
             this.fil_send.UseVisualStyleBackColor = true;
@@ -89,9 +89,9 @@
             // 
             // win_shake
             // 
-            this.win_shake.Location = new System.Drawing.Point(12, 533);
+            this.win_shake.Location = new System.Drawing.Point(687, 556);
             this.win_shake.Name = "win_shake";
-            this.win_shake.Size = new System.Drawing.Size(134, 55);
+            this.win_shake.Size = new System.Drawing.Size(161, 65);
             this.win_shake.TabIndex = 2;
             this.win_shake.Text = "窗口抖动";
             this.win_shake.UseVisualStyleBackColor = true;
@@ -99,7 +99,7 @@
             // 
             // my_txt
             // 
-            this.my_txt.Location = new System.Drawing.Point(12, 687);
+            this.my_txt.Location = new System.Drawing.Point(12, 736);
             this.my_txt.Name = "my_txt";
             this.my_txt.Size = new System.Drawing.Size(884, 188);
             this.my_txt.TabIndex = 3;
@@ -107,7 +107,7 @@
             // 
             // send_mytxt
             // 
-            this.send_mytxt.Location = new System.Drawing.Point(769, 806);
+            this.send_mytxt.Location = new System.Drawing.Point(769, 855);
             this.send_mytxt.Name = "send_mytxt";
             this.send_mytxt.Size = new System.Drawing.Size(127, 69);
             this.send_mytxt.TabIndex = 4;
@@ -118,7 +118,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1167, 408);
+            this.label1.Location = new System.Drawing.Point(1019, 347);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 24);
             this.label1.TabIndex = 5;
@@ -126,16 +126,16 @@
             // 
             // group_mem
             // 
-            this.group_mem.Location = new System.Drawing.Point(1192, 494);
+            this.group_mem.Location = new System.Drawing.Point(937, 402);
             this.group_mem.Name = "group_mem";
-            this.group_mem.Size = new System.Drawing.Size(191, 259);
+            this.group_mem.Size = new System.Drawing.Size(293, 378);
             this.group_mem.TabIndex = 6;
             this.group_mem.Text = "";
             // 
             // E_90
             // 
             this.E_90.Image = global::jiwang.Properties.Resources.face__90_;
-            this.E_90.Location = new System.Drawing.Point(171, 533);
+            this.E_90.Location = new System.Drawing.Point(19, 553);
             this.E_90.Name = "E_90";
             this.E_90.Size = new System.Drawing.Size(82, 64);
             this.E_90.TabIndex = 7;
@@ -145,7 +145,7 @@
             // E_86
             // 
             this.E_86.Image = global::jiwang.Properties.Resources.face__86_;
-            this.E_86.Location = new System.Drawing.Point(287, 533);
+            this.E_86.Location = new System.Drawing.Point(109, 553);
             this.E_86.Name = "E_86";
             this.E_86.Size = new System.Drawing.Size(80, 69);
             this.E_86.TabIndex = 8;
@@ -155,7 +155,7 @@
             // E_76
             // 
             this.E_76.Image = global::jiwang.Properties.Resources.face__76_;
-            this.E_76.Location = new System.Drawing.Point(396, 533);
+            this.E_76.Location = new System.Drawing.Point(206, 553);
             this.E_76.Name = "E_76";
             this.E_76.Size = new System.Drawing.Size(80, 69);
             this.E_76.TabIndex = 9;
@@ -165,7 +165,7 @@
             // E_80
             // 
             this.E_80.Image = global::jiwang.Properties.Resources.face__80_;
-            this.E_80.Location = new System.Drawing.Point(506, 533);
+            this.E_80.Location = new System.Drawing.Point(305, 553);
             this.E_80.Name = "E_80";
             this.E_80.Size = new System.Drawing.Size(73, 69);
             this.E_80.TabIndex = 10;
@@ -175,7 +175,7 @@
             // E_82
             // 
             this.E_82.Image = global::jiwang.Properties.Resources.face__82_;
-            this.E_82.Location = new System.Drawing.Point(603, 533);
+            this.E_82.Location = new System.Drawing.Point(397, 553);
             this.E_82.Name = "E_82";
             this.E_82.Size = new System.Drawing.Size(75, 69);
             this.E_82.TabIndex = 11;
@@ -185,9 +185,9 @@
             // E_87
             // 
             this.E_87.Image = global::jiwang.Properties.Resources.face__87_;
-            this.E_87.Location = new System.Drawing.Point(710, 533);
+            this.E_87.Location = new System.Drawing.Point(478, 633);
             this.E_87.Name = "E_87";
-            this.E_87.Size = new System.Drawing.Size(62, 69);
+            this.E_87.Size = new System.Drawing.Size(69, 66);
             this.E_87.TabIndex = 12;
             this.E_87.TabStop = false;
             this.E_87.Click += new System.EventHandler(this.E_87_Click);
@@ -195,7 +195,7 @@
             // E_88
             // 
             this.E_88.Image = global::jiwang.Properties.Resources.face__88_;
-            this.E_88.Location = new System.Drawing.Point(790, 536);
+            this.E_88.Location = new System.Drawing.Point(568, 556);
             this.E_88.Name = "E_88";
             this.E_88.Size = new System.Drawing.Size(72, 66);
             this.E_88.TabIndex = 13;
@@ -205,9 +205,9 @@
             // E_91
             // 
             this.E_91.Image = global::jiwang.Properties.Resources.face__91_;
-            this.E_91.Location = new System.Drawing.Point(263, 615);
+            this.E_91.Location = new System.Drawing.Point(19, 623);
             this.E_91.Name = "E_91";
-            this.E_91.Size = new System.Drawing.Size(59, 66);
+            this.E_91.Size = new System.Drawing.Size(82, 76);
             this.E_91.TabIndex = 14;
             this.E_91.TabStop = false;
             this.E_91.Click += new System.EventHandler(this.E_91_Click);
@@ -215,9 +215,9 @@
             // E_77
             // 
             this.E_77.Image = global::jiwang.Properties.Resources.face__77_;
-            this.E_77.Location = new System.Drawing.Point(328, 612);
+            this.E_77.Location = new System.Drawing.Point(109, 630);
             this.E_77.Name = "E_77";
-            this.E_77.Size = new System.Drawing.Size(70, 69);
+            this.E_77.Size = new System.Drawing.Size(80, 69);
             this.E_77.TabIndex = 15;
             this.E_77.TabStop = false;
             this.E_77.Click += new System.EventHandler(this.E_77_Click);
@@ -225,9 +225,9 @@
             // E_84
             // 
             this.E_84.Image = global::jiwang.Properties.Resources.face__84_;
-            this.E_84.Location = new System.Drawing.Point(404, 615);
+            this.E_84.Location = new System.Drawing.Point(206, 633);
             this.E_84.Name = "E_84";
-            this.E_84.Size = new System.Drawing.Size(72, 66);
+            this.E_84.Size = new System.Drawing.Size(80, 66);
             this.E_84.TabIndex = 16;
             this.E_84.TabStop = false;
             this.E_84.Click += new System.EventHandler(this.E_84_Click);
@@ -235,9 +235,9 @@
             // E_83
             // 
             this.E_83.Image = global::jiwang.Properties.Resources.face__83_;
-            this.E_83.Location = new System.Drawing.Point(482, 615);
+            this.E_83.Location = new System.Drawing.Point(305, 633);
             this.E_83.Name = "E_83";
-            this.E_83.Size = new System.Drawing.Size(53, 66);
+            this.E_83.Size = new System.Drawing.Size(73, 66);
             this.E_83.TabIndex = 17;
             this.E_83.TabStop = false;
             this.E_83.Click += new System.EventHandler(this.E_83_Click);
@@ -245,7 +245,7 @@
             // E_81
             // 
             this.E_81.Image = global::jiwang.Properties.Resources.face__81_;
-            this.E_81.Location = new System.Drawing.Point(541, 615);
+            this.E_81.Location = new System.Drawing.Point(397, 633);
             this.E_81.Name = "E_81";
             this.E_81.Size = new System.Drawing.Size(64, 66);
             this.E_81.TabIndex = 18;
@@ -255,9 +255,9 @@
             // E_79
             // 
             this.E_79.Image = global::jiwang.Properties.Resources.face__79_;
-            this.E_79.Location = new System.Drawing.Point(611, 615);
+            this.E_79.Location = new System.Drawing.Point(478, 553);
             this.E_79.Name = "E_79";
-            this.E_79.Size = new System.Drawing.Size(67, 66);
+            this.E_79.Size = new System.Drawing.Size(69, 69);
             this.E_79.TabIndex = 19;
             this.E_79.TabStop = false;
             this.E_79.Click += new System.EventHandler(this.E_79_Click);
@@ -266,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1522, 1013);
+            this.ClientSize = new System.Drawing.Size(1268, 976);
             this.Controls.Add(this.E_79);
             this.Controls.Add(this.E_81);
             this.Controls.Add(this.E_83);
