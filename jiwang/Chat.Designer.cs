@@ -150,6 +150,7 @@
             this.E_86.Size = new System.Drawing.Size(41, 42);
             this.E_86.TabIndex = 8;
             this.E_86.TabStop = false;
+            this.E_86.Click += new System.EventHandler(this.E_86_Click);
             // 
             // E_76
             // 
@@ -159,6 +160,7 @@
             this.E_76.Size = new System.Drawing.Size(41, 42);
             this.E_76.TabIndex = 9;
             this.E_76.TabStop = false;
+            this.E_76.Click += new System.EventHandler(this.E_76_Click);
             // 
             // E_80
             // 
@@ -168,6 +170,7 @@
             this.E_80.Size = new System.Drawing.Size(41, 42);
             this.E_80.TabIndex = 10;
             this.E_80.TabStop = false;
+            this.E_80.Click += new System.EventHandler(this.E_80_Click);
             // 
             // E_82
             // 
@@ -177,6 +180,7 @@
             this.E_82.Size = new System.Drawing.Size(41, 42);
             this.E_82.TabIndex = 11;
             this.E_82.TabStop = false;
+            this.E_82.Click += new System.EventHandler(this.E_82_Click);
             // 
             // E_87
             // 
@@ -186,6 +190,7 @@
             this.E_87.Size = new System.Drawing.Size(41, 42);
             this.E_87.TabIndex = 12;
             this.E_87.TabStop = false;
+            this.E_87.Click += new System.EventHandler(this.E_87_Click);
             // 
             // E_88
             // 
@@ -195,6 +200,7 @@
             this.E_88.Size = new System.Drawing.Size(41, 42);
             this.E_88.TabIndex = 13;
             this.E_88.TabStop = false;
+            this.E_88.Click += new System.EventHandler(this.E_88_Click);
             // 
             // E_91
             // 
@@ -204,6 +210,7 @@
             this.E_91.Size = new System.Drawing.Size(41, 42);
             this.E_91.TabIndex = 14;
             this.E_91.TabStop = false;
+            this.E_91.Click += new System.EventHandler(this.E_91_Click);
             // 
             // E_77
             // 
@@ -213,6 +220,7 @@
             this.E_77.Size = new System.Drawing.Size(41, 42);
             this.E_77.TabIndex = 15;
             this.E_77.TabStop = false;
+            this.E_77.Click += new System.EventHandler(this.E_77_Click);
             // 
             // E_84
             // 
@@ -222,6 +230,7 @@
             this.E_84.Size = new System.Drawing.Size(41, 42);
             this.E_84.TabIndex = 16;
             this.E_84.TabStop = false;
+            this.E_84.Click += new System.EventHandler(this.E_84_Click);
             // 
             // E_83
             // 
@@ -231,6 +240,7 @@
             this.E_83.Size = new System.Drawing.Size(41, 42);
             this.E_83.TabIndex = 17;
             this.E_83.TabStop = false;
+            this.E_83.Click += new System.EventHandler(this.E_83_Click);
             // 
             // E_81
             // 
@@ -240,6 +250,7 @@
             this.E_81.Size = new System.Drawing.Size(41, 42);
             this.E_81.TabIndex = 18;
             this.E_81.TabStop = false;
+            this.E_81.Click += new System.EventHandler(this.E_81_Click);
             // 
             // E_79
             // 
@@ -249,6 +260,7 @@
             this.E_79.Size = new System.Drawing.Size(41, 42);
             this.E_79.TabIndex = 19;
             this.E_79.TabStop = false;
+            this.E_79.Click += new System.EventHandler(this.E_79_Click);
             // 
             // Chat
             // 

@@ -25,6 +25,7 @@ namespace jiwang
         int form3_num;
         string[] Username;
         string geshi = @"^--E[0-9]{2}--$";//表情解析格式
+
         bool judge = false;//写字框占用标识
         private ManualResetEvent interrupt = new ManualResetEvent(false);
         private delegate void client(Socket file_send_receive);//委托线程，INVOKE调用；增加线程独立性——此处传递参数为接收发送方套接字
@@ -63,7 +64,9 @@ namespace jiwang
                             {   //richTextBox1.SelectionAlignment = HorizontalAlignment.Center;
                                 //    richTextBox1.AppendText("好友已退出");
                                 MessageBox.Show("对话结束");
-                                this.Hide();
+                                MyHide();
+                                //this.Hide();
+                                //System.Environment.Exit(0);
                                 return;
                             }
 
@@ -193,16 +196,57 @@ namespace jiwang
                 //richTextBox1.SelectionColor = Color.Red;
                 //richTextBox1.AppendText(Thread.CurrentThread.ManagedThreadId + "回调结束------------" + DateTime.Now.Second.ToString() + ":" + DateTime.Now.Millisecond.ToString() + "------------------------------------------\r\n");
                 //richTextBox1.SelectionColor = Color.Blue;
-                bool a = Regex.IsMatch("--E90--", geshi);
-                bool a1 = Regex.IsMatch("\n--E90--\n", geshi);
-                if (Regex.IsMatch(recvStr.Trim('\n'), geshi))
-                {                   
-                    chat_rec.AppendText(recvStr.Substring(3,2));
+                int len = recvStr.Length;
+                string a = recvStr.Substring(len - 8, 7);
+
+                if (Regex.IsMatch(a, geshi))
+                {   //显示日期                
+                    chat_rec.AppendText(recvStr.Substring(1,len-9));
+                    Bitmap bmp = jiwang.Properties.Resources.face__90_;
+                    switch (a)
+                    {
+                        case "--76--": bmp = jiwang.Properties.Resources.face__76_; break;
+                        case "--77--": bmp = jiwang.Properties.Resources.face__90_; break;
+                        case "--79--": bmp = jiwang.Properties.Resources.face__90_; break;
+                        case "--80--": bmp = jiwang.Properties.Resources.face__90_;break;
+                        case "--81--": bmp = jiwang.Properties.Resources.face__90_; break;
+                        case "--82--": bmp = jiwang.Properties.Resources.face__90_; break;
+                        case "--83--": bmp = jiwang.Properties.Resources.face__90_; break;
+                        case "--84--": bmp = jiwang.Properties.Resources.face__90_; break;
+                        case "--86--": bmp = jiwang.Properties.Resources.face__90_; break;
+                        case "--87--": bmp = jiwang.Properties.Resources.face__90_; break;
+                        case "--88--": bmp = jiwang.Properties.Resources.face__90_; break;
+                        case "--90--": bmp = jiwang.Properties.Resources.face__90_; break;
+                        case "--91--": bmp = jiwang.Properties.Resources.face__90_; break;
+                        default:break;
+                    }
+                    
+                    Clipboard.SetDataObject(bmp, false);//将图片放在剪贴板中
+
+                    if (chat_rec.CanPaste(DataFormats.GetFormat(DataFormats.Bitmap)))
+
+                        chat_rec.Paste();//粘贴数据
+
+                    chat_rec.AppendText("\n");
                 }
                 else
                 {
                     chat_rec.AppendText(recvStr + "\n");
                 }
+            }
+        }
+        //跨线程最小化窗口
+        delegate void MyHideHander();//带参数
+        private void MyHide()
+        {
+            if (chat_rec.InvokeRequired)//判断是否是线程在访问该控件
+            {
+                MyHideHander set = new MyHideHander(MyHide);//委托的方法参数应和SetText一致
+                chat_rec.Invoke(set); //委托自身，递归委托，直到不是以invoke方式去访问控件
+            }
+            else
+            {
+                this.Close();
             }
         }
         #region 退出
@@ -351,11 +395,62 @@ namespace jiwang
             timer1.Stop();
         }
         #endregion
+
         #region 表情
         private void E_90_Click(object sender, EventArgs e)
         {
             my_txt.Text="--E90--";
         }
+        private void E_86_Click(object sender, EventArgs e)
+        {
+            my_txt.Text = "--E86--";
+        }
+        private void E_76_Click(object sender, EventArgs e)
+        {
+            my_txt.Text = "--E76--";
+        }
+        private void E_80_Click(object sender, EventArgs e)
+        {
+            my_txt.Text = "--E80--";
+        }
+        private void E_82_Click(object sender, EventArgs e)
+        {
+            my_txt.Text = "--E82--";
+        }
+        private void E_87_Click(object sender, EventArgs e)
+        {
+            my_txt.Text = "--E87--";
+        }
+        private void E_88_Click(object sender, EventArgs e)
+        {
+            my_txt.Text = "--E88--";
+        }
+        private void E_91_Click(object sender, EventArgs e)
+        {
+            my_txt.Text = "--E91--";
+        }
+        private void E_77_Click(object sender, EventArgs e)
+        {
+            my_txt.Text = "--E77--";
+        }
+        private void E_84_Click(object sender, EventArgs e)
+        {
+            my_txt.Text = "--E84--";
+        }
+        private void E_83_Click(object sender, EventArgs e)
+        {
+            my_txt.Text = "--E83--";
+        }
+        private void E_81_Click(object sender, EventArgs e)
+        {
+            my_txt.Text = "--E81--";
+        }
+        private void E_79_Click(object sender, EventArgs e)
+        {
+            my_txt.Text = "--E79--";
+        }
         #endregion
+
+
     }
 }
