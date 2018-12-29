@@ -116,7 +116,7 @@ namespace jiwang
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.ToString(), "警告", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            //MessageBox.Show(ex.ToString(), "警告", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
                     }, null);
@@ -205,19 +205,19 @@ namespace jiwang
                     Bitmap bmp = jiwang.Properties.Resources.face__90_;
                     switch (a)
                     {
-                        case "--76--": bmp = jiwang.Properties.Resources.face__76_; break;
-                        case "--77--": bmp = jiwang.Properties.Resources.face__90_; break;
-                        case "--79--": bmp = jiwang.Properties.Resources.face__90_; break;
-                        case "--80--": bmp = jiwang.Properties.Resources.face__90_;break;
-                        case "--81--": bmp = jiwang.Properties.Resources.face__90_; break;
-                        case "--82--": bmp = jiwang.Properties.Resources.face__90_; break;
-                        case "--83--": bmp = jiwang.Properties.Resources.face__90_; break;
-                        case "--84--": bmp = jiwang.Properties.Resources.face__90_; break;
-                        case "--86--": bmp = jiwang.Properties.Resources.face__90_; break;
-                        case "--87--": bmp = jiwang.Properties.Resources.face__90_; break;
-                        case "--88--": bmp = jiwang.Properties.Resources.face__90_; break;
-                        case "--90--": bmp = jiwang.Properties.Resources.face__90_; break;
-                        case "--91--": bmp = jiwang.Properties.Resources.face__90_; break;
+                        case "--E76--": bmp = jiwang.Properties.Resources.face__76_; break;
+                        case "--E77--": bmp = jiwang.Properties.Resources.face__77_; break;
+                        case "--E79--": bmp = jiwang.Properties.Resources.face__79_; break;
+                        case "--E80--": bmp = jiwang.Properties.Resources.face__80_;break;
+                        case "--E81--": bmp = jiwang.Properties.Resources.face__81_; break;
+                        case "--E82--": bmp = jiwang.Properties.Resources.face__82_; break;
+                        case "--E83--": bmp = jiwang.Properties.Resources.face__83_; break;
+                        case "--E84--": bmp = jiwang.Properties.Resources.face__84_; break;
+                        case "--E86--": bmp = jiwang.Properties.Resources.face__86_; break;
+                        case "--E87--": bmp = jiwang.Properties.Resources.face__87_; break;
+                        case "--E88--": bmp = jiwang.Properties.Resources.face__88_; break;
+                        case "--E90--": bmp = jiwang.Properties.Resources.face__90_; break;
+                        case "--E91--": bmp = jiwang.Properties.Resources.face__91_; break;
                         default:break;
                     }
                     
@@ -245,7 +245,7 @@ namespace jiwang
                 chat_rec.Invoke(set); //委托自身，递归委托，直到不是以invoke方式去访问控件
             }
             else
-            {
+            {               
                 this.Close();
             }
         }
