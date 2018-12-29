@@ -35,7 +35,6 @@
             this.win_shake = new System.Windows.Forms.Button();
             this.my_txt = new System.Windows.Forms.RichTextBox();
             this.send_mytxt = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.group_mem = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -71,17 +70,18 @@
             // 
             // chat_rec
             // 
+            this.chat_rec.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.chat_rec.Location = new System.Drawing.Point(12, 12);
             this.chat_rec.Name = "chat_rec";
-            this.chat_rec.Size = new System.Drawing.Size(884, 520);
+            this.chat_rec.Size = new System.Drawing.Size(670, 371);
             this.chat_rec.TabIndex = 0;
             this.chat_rec.Text = "";
             // 
             // fil_send
             // 
-            this.fil_send.Location = new System.Drawing.Point(687, 633);
+            this.fil_send.Location = new System.Drawing.Point(521, 477);
             this.fil_send.Name = "fil_send";
-            this.fil_send.Size = new System.Drawing.Size(161, 66);
+            this.fil_send.Size = new System.Drawing.Size(161, 49);
             this.fil_send.TabIndex = 1;
             this.fil_send.Text = "发送文件";
             this.fil_send.UseVisualStyleBackColor = true;
@@ -93,9 +93,9 @@
             // 
             // win_shake
             // 
-            this.win_shake.Location = new System.Drawing.Point(687, 556);
+            this.win_shake.Location = new System.Drawing.Point(521, 406);
             this.win_shake.Name = "win_shake";
-            this.win_shake.Size = new System.Drawing.Size(161, 65);
+            this.win_shake.Size = new System.Drawing.Size(161, 49);
             this.win_shake.TabIndex = 2;
             this.win_shake.Text = "窗口抖动";
             this.win_shake.UseVisualStyleBackColor = true;
@@ -103,9 +103,10 @@
             // 
             // my_txt
             // 
-            this.my_txt.Location = new System.Drawing.Point(12, 736);
+            this.my_txt.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.my_txt.Location = new System.Drawing.Point(12, 532);
             this.my_txt.Name = "my_txt";
-            this.my_txt.Size = new System.Drawing.Size(884, 188);
+            this.my_txt.Size = new System.Drawing.Size(663, 188);
             this.my_txt.TabIndex = 3;
             this.my_txt.Text = "";
             // 
@@ -113,7 +114,7 @@
             // 
             this.send_mytxt.BackColor = System.Drawing.SystemColors.HighlightText;
             this.send_mytxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.send_mytxt.Location = new System.Drawing.Point(769, 855);
+            this.send_mytxt.Location = new System.Drawing.Point(548, 651);
             this.send_mytxt.Margin = new System.Windows.Forms.Padding(0);
             this.send_mytxt.Name = "send_mytxt";
             this.send_mytxt.Size = new System.Drawing.Size(127, 69);
@@ -122,29 +123,21 @@
             this.send_mytxt.UseVisualStyleBackColor = false;
             this.send_mytxt.Click += new System.EventHandler(this.Send_mytxt_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 12F);
-            this.label1.Location = new System.Drawing.Point(1013, 476);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 33);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "聊天成员";
-            // 
             // group_mem
             // 
-            this.group_mem.Location = new System.Drawing.Point(936, 546);
+            this.group_mem.Font = new System.Drawing.Font("宋体", 12F);
+            this.group_mem.Location = new System.Drawing.Point(723, 408);
             this.group_mem.Name = "group_mem";
-            this.group_mem.Size = new System.Drawing.Size(293, 378);
+            this.group_mem.Size = new System.Drawing.Size(156, 300);
             this.group_mem.TabIndex = 6;
             this.group_mem.Text = "";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.HighlightText;
             this.label2.Font = new System.Drawing.Font("宋体", 20F);
-            this.label2.Location = new System.Drawing.Point(999, 83);
+            this.label2.Location = new System.Drawing.Point(753, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(185, 54);
             this.label2.TabIndex = 21;
@@ -153,149 +146,206 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 15F);
-            this.label3.Location = new System.Drawing.Point(932, 172);
+            this.label3.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.label3.Font = new System.Drawing.Font("宋体", 16F);
+            this.label3.Location = new System.Drawing.Point(719, 144);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(297, 200);
+            this.label3.Size = new System.Drawing.Size(321, 215);
             this.label3.TabIndex = 22;
             this.label3.Text = "1.严禁辱骂他人\r\n\r\n2.严禁反动宣传\r\n\r\n3.严禁黄赌毒！";
             // 
             // E_78
             // 
+            this.E_78.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.E_78.Image = global::jiwang.Properties.Resources.face__78_;
-            this.E_78.Location = new System.Drawing.Point(568, 633);
+            this.E_78.Location = new System.Drawing.Point(449, 475);
             this.E_78.Name = "E_78";
-            this.E_78.Size = new System.Drawing.Size(72, 66);
+            this.E_78.Size = new System.Drawing.Size(51, 43);
+            this.E_78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.E_78.TabIndex = 20;
             this.E_78.TabStop = false;
             this.E_78.Click += new System.EventHandler(this.E_78_Click);
             // 
             // E_79
             // 
+            this.E_79.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.E_79.Image = global::jiwang.Properties.Resources.face__79_;
-            this.E_79.Location = new System.Drawing.Point(478, 553);
+            this.E_79.Location = new System.Drawing.Point(379, 405);
             this.E_79.Name = "E_79";
-            this.E_79.Size = new System.Drawing.Size(69, 69);
+            this.E_79.Size = new System.Drawing.Size(49, 42);
+            this.E_79.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.E_79.TabIndex = 19;
             this.E_79.TabStop = false;
             this.E_79.Click += new System.EventHandler(this.E_79_Click);
             // 
             // E_81
             // 
+            this.E_81.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.E_81.Image = global::jiwang.Properties.Resources.face__81_;
-            this.E_81.Location = new System.Drawing.Point(397, 633);
+            this.E_81.Location = new System.Drawing.Point(303, 475);
             this.E_81.Name = "E_81";
-            this.E_81.Size = new System.Drawing.Size(64, 66);
+            this.E_81.Size = new System.Drawing.Size(45, 40);
+            this.E_81.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.E_81.TabIndex = 18;
             this.E_81.TabStop = false;
             this.E_81.Click += new System.EventHandler(this.E_81_Click);
             // 
             // E_83
             // 
+            this.E_83.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.E_83.Image = global::jiwang.Properties.Resources.face__83_;
-            this.E_83.Location = new System.Drawing.Point(305, 633);
+            this.E_83.Location = new System.Drawing.Point(229, 475);
             this.E_83.Name = "E_83";
-            this.E_83.Size = new System.Drawing.Size(73, 66);
+            this.E_83.Size = new System.Drawing.Size(41, 41);
+            this.E_83.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.E_83.TabIndex = 17;
             this.E_83.TabStop = false;
             this.E_83.Click += new System.EventHandler(this.E_83_Click);
             // 
             // E_84
             // 
+            this.E_84.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.E_84.Image = global::jiwang.Properties.Resources.face__84_;
-            this.E_84.Location = new System.Drawing.Point(206, 633);
+            this.E_84.Location = new System.Drawing.Point(159, 475);
             this.E_84.Name = "E_84";
-            this.E_84.Size = new System.Drawing.Size(80, 66);
+            this.E_84.Size = new System.Drawing.Size(42, 43);
+            this.E_84.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.E_84.TabIndex = 16;
             this.E_84.TabStop = false;
             this.E_84.Click += new System.EventHandler(this.E_84_Click);
             // 
             // E_77
             // 
+            this.E_77.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.E_77.Image = global::jiwang.Properties.Resources.face__77_;
-            this.E_77.Location = new System.Drawing.Point(109, 630);
+            this.E_77.Location = new System.Drawing.Point(87, 475);
             this.E_77.Name = "E_77";
-            this.E_77.Size = new System.Drawing.Size(80, 69);
+            this.E_77.Size = new System.Drawing.Size(51, 44);
+            this.E_77.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.E_77.TabIndex = 15;
             this.E_77.TabStop = false;
             this.E_77.Click += new System.EventHandler(this.E_77_Click);
             // 
             // E_91
             // 
+            this.E_91.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.E_91.Image = global::jiwang.Properties.Resources.face__91_;
-            this.E_91.Location = new System.Drawing.Point(19, 623);
+            this.E_91.Location = new System.Drawing.Point(12, 466);
             this.E_91.Name = "E_91";
-            this.E_91.Size = new System.Drawing.Size(82, 76);
+            this.E_91.Size = new System.Drawing.Size(54, 44);
+            this.E_91.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.E_91.TabIndex = 14;
             this.E_91.TabStop = false;
             this.E_91.Click += new System.EventHandler(this.E_91_Click);
             // 
             // E_88
             // 
+            this.E_88.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.E_88.Image = global::jiwang.Properties.Resources.face__88_;
-            this.E_88.Location = new System.Drawing.Point(568, 556);
+            this.E_88.Location = new System.Drawing.Point(449, 405);
             this.E_88.Name = "E_88";
-            this.E_88.Size = new System.Drawing.Size(72, 66);
+            this.E_88.Size = new System.Drawing.Size(47, 49);
+            this.E_88.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.E_88.TabIndex = 13;
             this.E_88.TabStop = false;
             this.E_88.Click += new System.EventHandler(this.E_88_Click);
             // 
             // E_87
             // 
+            this.E_87.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.E_87.Image = global::jiwang.Properties.Resources.face__87_;
-            this.E_87.Location = new System.Drawing.Point(478, 633);
+            this.E_87.Location = new System.Drawing.Point(379, 475);
             this.E_87.Name = "E_87";
-            this.E_87.Size = new System.Drawing.Size(69, 66);
+            this.E_87.Size = new System.Drawing.Size(51, 45);
+            this.E_87.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.E_87.TabIndex = 12;
             this.E_87.TabStop = false;
             this.E_87.Click += new System.EventHandler(this.E_87_Click);
             // 
             // E_82
             // 
+            this.E_82.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.E_82.Image = global::jiwang.Properties.Resources.face__82_;
-            this.E_82.Location = new System.Drawing.Point(397, 553);
+            this.E_82.Location = new System.Drawing.Point(303, 405);
             this.E_82.Name = "E_82";
-            this.E_82.Size = new System.Drawing.Size(75, 69);
+            this.E_82.Size = new System.Drawing.Size(49, 45);
+            this.E_82.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.E_82.TabIndex = 11;
             this.E_82.TabStop = false;
             this.E_82.Click += new System.EventHandler(this.E_82_Click);
             // 
             // E_80
             // 
+            this.E_80.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.E_80.Image = global::jiwang.Properties.Resources.face__80_;
-            this.E_80.Location = new System.Drawing.Point(305, 553);
+            this.E_80.Location = new System.Drawing.Point(229, 405);
             this.E_80.Name = "E_80";
-            this.E_80.Size = new System.Drawing.Size(73, 69);
+            this.E_80.Size = new System.Drawing.Size(55, 45);
+            this.E_80.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.E_80.TabIndex = 10;
             this.E_80.TabStop = false;
             this.E_80.Click += new System.EventHandler(this.E_80_Click);
             // 
             // E_76
             // 
+            this.E_76.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.E_76.Image = global::jiwang.Properties.Resources.face__76_;
-            this.E_76.Location = new System.Drawing.Point(206, 553);
+            this.E_76.Location = new System.Drawing.Point(159, 405);
             this.E_76.Name = "E_76";
-            this.E_76.Size = new System.Drawing.Size(80, 69);
+            this.E_76.Size = new System.Drawing.Size(44, 38);
+            this.E_76.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.E_76.TabIndex = 9;
             this.E_76.TabStop = false;
             this.E_76.Click += new System.EventHandler(this.E_76_Click);
             // 
             // E_86
             // 
+            this.E_86.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.E_86.Image = global::jiwang.Properties.Resources.face__86_;
-            this.E_86.Location = new System.Drawing.Point(109, 553);
+            this.E_86.Location = new System.Drawing.Point(87, 405);
             this.E_86.Name = "E_86";
-            this.E_86.Size = new System.Drawing.Size(80, 69);
+            this.E_86.Size = new System.Drawing.Size(41, 41);
+            this.E_86.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.E_86.TabIndex = 8;
             this.E_86.TabStop = false;
             this.E_86.Click += new System.EventHandler(this.E_86_Click);
             // 
             // E_90
             // 
+            this.E_90.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.E_90.Image = global::jiwang.Properties.Resources.face__90_;
-            this.E_90.Location = new System.Drawing.Point(19, 553);
+            this.E_90.Location = new System.Drawing.Point(12, 405);
             this.E_90.Name = "E_90";
-            this.E_90.Size = new System.Drawing.Size(82, 64);
+            this.E_90.Size = new System.Drawing.Size(42, 42);
+            this.E_90.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.E_90.TabIndex = 7;
             this.E_90.TabStop = false;
             this.E_90.Click += new System.EventHandler(this.E_90_Click);
@@ -304,7 +354,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 981);
+            this.BackgroundImage = global::jiwang.Properties.Resources._5;
+            this.ClientSize = new System.Drawing.Size(903, 736);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.E_78);
@@ -322,14 +373,12 @@
             this.Controls.Add(this.E_86);
             this.Controls.Add(this.E_90);
             this.Controls.Add(this.group_mem);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.send_mytxt);
             this.Controls.Add(this.my_txt);
             this.Controls.Add(this.win_shake);
             this.Controls.Add(this.fil_send);
             this.Controls.Add(this.chat_rec);
             this.Font = new System.Drawing.Font("宋体", 9F);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Chat";
             this.Text = "Chat";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Chat_FormClosing);
@@ -360,7 +409,6 @@
         private System.Windows.Forms.Button win_shake;
         private System.Windows.Forms.RichTextBox my_txt;
         private System.Windows.Forms.Button send_mytxt;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox group_mem;
         private System.Windows.Forms.PictureBox E_90;
         private System.Windows.Forms.PictureBox E_86;

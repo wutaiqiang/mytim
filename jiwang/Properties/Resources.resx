@@ -130,9 +130,6 @@
   <data name="face (12)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (12).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face (90)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Face\face (90).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="face (71)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (71).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -150,9 +147,6 @@
   </data>
   <data name="face (46)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (46).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="face (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Face\face (4).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (51)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (51).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,8 +190,11 @@
   <data name="face (56)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (56).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face (86)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Face\face (86).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="face (48)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Face\face (48).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\logo\4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (24)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (24).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,17 +202,23 @@
   <data name="face (27)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (27).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="face (59)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Face\face (59).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="face (35)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (35).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face (45)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Face\face (45).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="face (84)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Face\face (84).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (40)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (40).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (57)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (57).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face (25)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Face\face (25).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (54)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (54).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -225,6 +228,9 @@
   </data>
   <data name="face (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (1).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face (45)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Face\face (45).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (10).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,11 +247,11 @@
   <data name="face (43)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (43).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="face (23)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Face\face (23).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="face (20)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (20).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="face (68)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Face\face (68).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (49)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (49).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,9 +268,6 @@
   <data name="face (58)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (58).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face (84)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Face\face (84).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="face (63)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (63).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -277,20 +280,26 @@
   <data name="face (21)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (21).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face (60)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Face\face (60).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="face (47)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Face\face (47).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (36)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (36).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face (48)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Face\face (48).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="face (90)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Face\face (90).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\logo\2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (62)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (62).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (37)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (37).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\logo\1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (87)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (87).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,11 +310,14 @@
   <data name="face (52)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (52).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\logo\3.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="face (65)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (65).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face (14)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Face\face (14).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="face (60)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Face\face (60).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (74)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (74).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -331,8 +343,8 @@
   <data name="face (73)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (73).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face (59)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Face\face (59).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="face (14)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Face\face (14).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (55)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (55).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -343,8 +355,8 @@
   <data name="face (67)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (67).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face (29)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Face\face (29).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="face (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Face\face (4).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (89)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (89).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,8 +364,8 @@
   <data name="face (9)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (9).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face (23)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Face\face (23).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="face (29)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Face\face (29).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (69)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (69).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -379,28 +391,19 @@
   <data name="face (22)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (22).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face (25)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Face\face (25).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="face (68)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Face\face (68).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (79)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (79).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="face (47)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Face\face (47).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="face (86)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Face\face (86).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="face (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Face\face (8).PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\logo\1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\logo\2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\logo\3.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\logo\4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\logo\5.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

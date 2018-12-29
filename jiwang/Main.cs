@@ -74,6 +74,7 @@ namespace jiwang
         #region 更新表单
         private void Updata_list()
         {
+            after = 0;
             this.listView1.Items.Clear();
 
             if (!File.Exists(List_dir))

@@ -36,6 +36,7 @@ namespace jiwang
             //分割成各个联系人,显示群聊人数
             Username = Users_name.Split(',');
             group_mem.SelectionAlignment = HorizontalAlignment.Center;
+            group_mem.AppendText("聊天成员\n");         
             for (int i = 0; i < Username.Length; i++)
             {             
                 group_mem.AppendText(Username[i] + "\n");//追加文字              
