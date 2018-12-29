@@ -37,13 +37,14 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.chat = new System.Windows.Forms.Button();
+            this.fri_check = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Userinfo
             // 
             this.Userinfo.AutoSize = true;
             this.Userinfo.Font = new System.Drawing.Font("宋体", 20F);
-            this.Userinfo.Location = new System.Drawing.Point(57, 34);
+            this.Userinfo.Location = new System.Drawing.Point(36, 28);
             this.Userinfo.Name = "Userinfo";
             this.Userinfo.Size = new System.Drawing.Size(185, 54);
             this.Userinfo.TabIndex = 1;
@@ -52,7 +53,7 @@
             // 
             // Btnlogout
             // 
-            this.Btnlogout.Location = new System.Drawing.Point(981, 466);
+            this.Btnlogout.Location = new System.Drawing.Point(936, 408);
             this.Btnlogout.Name = "Btnlogout";
             this.Btnlogout.Size = new System.Drawing.Size(196, 70);
             this.Btnlogout.TabIndex = 2;
@@ -64,7 +65,7 @@
             // listView1
             // 
             this.listView1.FullRowSelect = true;
-            this.listView1.Location = new System.Drawing.Point(66, 141);
+            this.listView1.Location = new System.Drawing.Point(35, 98);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(711, 544);
             this.listView1.TabIndex = 3;
@@ -73,15 +74,15 @@
             // 
             // fri_id
             // 
-            this.fri_id.Location = new System.Drawing.Point(947, 141);
+            this.fri_id.Location = new System.Drawing.Point(936, 83);
             this.fri_id.Name = "fri_id";
-            this.fri_id.Size = new System.Drawing.Size(266, 35);
+            this.fri_id.Size = new System.Drawing.Size(196, 35);
             this.fri_id.TabIndex = 4;
             this.fri_id.UseWaitCursor = true;
             // 
             // fri_add
             // 
-            this.fri_add.Location = new System.Drawing.Point(981, 207);
+            this.fri_add.Location = new System.Drawing.Point(936, 149);
             this.fri_add.Name = "fri_add";
             this.fri_add.Size = new System.Drawing.Size(196, 75);
             this.fri_add.TabIndex = 5;
@@ -92,7 +93,7 @@
             // 
             // fri_del
             // 
-            this.fri_del.Location = new System.Drawing.Point(981, 344);
+            this.fri_del.Location = new System.Drawing.Point(936, 286);
             this.fri_del.Name = "fri_del";
             this.fri_del.Size = new System.Drawing.Size(196, 69);
             this.fri_del.TabIndex = 6;
@@ -104,7 +105,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(71, 742);
+            this.linkLabel1.Location = new System.Drawing.Point(31, 688);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(310, 24);
             this.linkLabel1.TabIndex = 7;
@@ -116,7 +117,7 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(455, 742);
+            this.linkLabel2.Location = new System.Drawing.Point(424, 688);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(322, 24);
             this.linkLabel2.TabIndex = 8;
@@ -127,7 +128,7 @@
             // 
             // chat
             // 
-            this.chat.Location = new System.Drawing.Point(981, 716);
+            this.chat.Location = new System.Drawing.Point(936, 631);
             this.chat.Name = "chat";
             this.chat.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.chat.Size = new System.Drawing.Size(196, 77);
@@ -137,11 +138,25 @@
             this.chat.UseWaitCursor = true;
             this.chat.Click += new System.EventHandler(this.Chat_Click);
             // 
+            // fri_check
+            // 
+            this.fri_check.Location = new System.Drawing.Point(936, 506);
+            this.fri_check.Name = "fri_check";
+            this.fri_check.Size = new System.Drawing.Size(196, 78);
+            this.fri_check.TabIndex = 10;
+            this.fri_check.Text = "好友状态";
+            this.fri_check.UseVisualStyleBackColor = true;
+            this.fri_check.UseWaitCursor = true;
+            this.fri_check.Click += new System.EventHandler(this.Fri_check_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1303, 884);
+            this.BackgroundImage = global::jiwang.Properties.Resources._2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(1323, 752);
+            this.Controls.Add(this.fri_check);
             this.Controls.Add(this.chat);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
@@ -170,5 +185,6 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Button chat;
+        private System.Windows.Forms.Button fri_check;
     }
 }

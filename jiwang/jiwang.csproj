@@ -371,5 +371,17 @@
   <ItemGroup>
     <None Include="bin\Debug\Face\face %2892%29.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="logo\1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo\2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo\3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo\4.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

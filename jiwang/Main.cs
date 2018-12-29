@@ -25,7 +25,9 @@ namespace jiwang
         public string List_dir;
         Socket Socket_user;//本机套接字
         IPAddress User_ip;
-
+        int before=0;
+        int after=0;//定时器更新前后的在线人数
+      
         string geshi = @"^20[0-9]{8}$";
         //初始化
         public Main(string username, Socket client)
@@ -105,6 +107,7 @@ namespace jiwang
                 else{
                     info[2] = flag;
                     info[3] = "Online";
+                    after = after + 1;
                 }
                 //初始化每一行的内容与颜色
                 ListViewItem mid_list = new ListViewItem(info);
@@ -151,6 +154,8 @@ namespace jiwang
             return IP_receive_mess;
                        
         }
+
+        
         #endregion
 
         #region logout
@@ -436,5 +441,27 @@ namespace jiwang
                 server_client_connection.Start();
             }
         }
+        //手动更新
+        private void Fri_check_Click(object sender, EventArgs e)
+        {
+            before = after;
+            after = 0;
+            //重新查询，更改after的值
+            Updata_list();
+
+            Console.WriteLine(before);
+            Console.WriteLine(after);
+
+            if (before>after)
+            {                           
+                MessageBox.Show("有好友下线了！", "通知", MessageBoxButtons.OK);             
+            }
+            else if(before<after)
+            {                
+                MessageBox.Show("有好友上线了！", "通知", MessageBoxButtons.OK);              
+            }
+        }
+
+        
     }
 }

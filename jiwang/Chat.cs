@@ -156,6 +156,7 @@ namespace jiwang
                     {
                         case "--E76--": bmp = jiwang.Properties.Resources.face__76_; break;
                         case "--E77--": bmp = jiwang.Properties.Resources.face__77_; break;
+                        case "--E78--": bmp = jiwang.Properties.Resources.face__78_; break;
                         case "--E79--": bmp = jiwang.Properties.Resources.face__79_; break;
                         case "--E80--": bmp = jiwang.Properties.Resources.face__80_; break;
                         case "--E81--": bmp = jiwang.Properties.Resources.face__81_; break;
@@ -243,6 +244,7 @@ namespace jiwang
                     {
                         case "--E76--": bmp = jiwang.Properties.Resources.face__76_; break;
                         case "--E77--": bmp = jiwang.Properties.Resources.face__77_; break;
+                        case "--E78--": bmp = jiwang.Properties.Resources.face__78_; break;
                         case "--E79--": bmp = jiwang.Properties.Resources.face__79_; break;
                         case "--E80--": bmp = jiwang.Properties.Resources.face__80_;break;
                         case "--E81--": bmp = jiwang.Properties.Resources.face__81_; break;
@@ -484,6 +486,10 @@ namespace jiwang
         private void E_79_Click(object sender, EventArgs e)
         {
             my_txt.Text = "--E79--";
+        }
+        private void E_78_Click(object sender, EventArgs e)
+        {
+            my_txt.Text = "--E78--";
         }
         #endregion
 

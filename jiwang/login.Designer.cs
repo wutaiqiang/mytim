@@ -38,9 +38,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(915, 628);
+            this.button1.Font = new System.Drawing.Font("宋体", 14F);
+            this.button1.Location = new System.Drawing.Point(124, 441);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 82);
+            this.button1.Size = new System.Drawing.Size(238, 85);
             this.button1.TabIndex = 0;
             this.button1.Text = "登录";
             this.button1.UseVisualStyleBackColor = true;
@@ -48,7 +49,7 @@
             // 
             // acco_text
             // 
-            this.acco_text.Location = new System.Drawing.Point(508, 350);
+            this.acco_text.Location = new System.Drawing.Point(258, 244);
             this.acco_text.Name = "acco_text";
             this.acco_text.Size = new System.Drawing.Size(238, 35);
             this.acco_text.TabIndex = 1;
@@ -56,7 +57,7 @@
             // 
             // pass_text
             // 
-            this.pass_text.Location = new System.Drawing.Point(508, 452);
+            this.pass_text.Location = new System.Drawing.Point(258, 346);
             this.pass_text.Name = "pass_text";
             this.pass_text.PasswordChar = '*';
             this.pass_text.Size = new System.Drawing.Size(238, 35);
@@ -66,7 +67,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(370, 353);
+            this.label1.Location = new System.Drawing.Point(120, 247);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 24);
             this.label1.TabIndex = 3;
@@ -75,7 +76,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(370, 455);
+            this.label2.Location = new System.Drawing.Point(120, 349);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 24);
             this.label2.TabIndex = 4;
@@ -83,9 +84,9 @@
             // 
             // see_pass
             // 
-            this.see_pass.Location = new System.Drawing.Point(797, 441);
+            this.see_pass.Location = new System.Drawing.Point(541, 335);
             this.see_pass.Name = "see_pass";
-            this.see_pass.Size = new System.Drawing.Size(141, 53);
+            this.see_pass.Size = new System.Drawing.Size(151, 53);
             this.see_pass.TabIndex = 5;
             this.see_pass.Text = "查看密码";
             this.see_pass.UseVisualStyleBackColor = true;
@@ -96,7 +97,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1214, 764);
+            this.BackgroundImage = global::jiwang.Properties.Resources._1;
+            this.ClientSize = new System.Drawing.Size(794, 733);
             this.Controls.Add(this.see_pass);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -104,7 +106,7 @@
             this.Controls.Add(this.acco_text);
             this.Controls.Add(this.button1);
             this.Name = "Login";
-            this.Text = "登陆";
+            this.Text = "登录界面";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
