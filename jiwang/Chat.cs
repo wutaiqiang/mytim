@@ -11,6 +11,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.IO;//命名空间
+using System.Text.RegularExpressions;//正则匹配
 
 namespace jiwang
 {
@@ -23,7 +24,7 @@ namespace jiwang
         Socket[] Chat_allsocket;
         int form3_num;
         string[] Username;
-
+        string geshi = @"^--E[0-9]{2}--$";//表情解析格式
         bool judge = false;//写字框占用标识
         private ManualResetEvent interrupt = new ManualResetEvent(false);
         private delegate void client(Socket file_send_receive);//委托线程，INVOKE调用；增加线程独立性——此处传递参数为接收发送方套接字
@@ -192,7 +193,16 @@ namespace jiwang
                 //richTextBox1.SelectionColor = Color.Red;
                 //richTextBox1.AppendText(Thread.CurrentThread.ManagedThreadId + "回调结束------------" + DateTime.Now.Second.ToString() + ":" + DateTime.Now.Millisecond.ToString() + "------------------------------------------\r\n");
                 //richTextBox1.SelectionColor = Color.Blue;
-                chat_rec.AppendText(recvStr + "\n");
+                bool a = Regex.IsMatch("--E90--", geshi);
+                bool a1 = Regex.IsMatch("\n--E90--\n", geshi);
+                if (Regex.IsMatch(recvStr.Trim('\n'), geshi))
+                {                   
+                    chat_rec.AppendText(recvStr.Substring(3,2));
+                }
+                else
+                {
+                    chat_rec.AppendText(recvStr + "\n");
+                }
             }
         }
         #region 退出
@@ -268,11 +278,11 @@ namespace jiwang
                     {
                         single_bytes = file_listener.Receive(pass, 500000, SocketFlags.None);
                         string get = Encoding.UTF8.GetString(pass, 0, single_bytes);
-                        //foreach (Socket item in Chat_allsocket)
-                        //{
-                        //    if (item != file_listener)
-                        //        AsynSend(item, get);
-                       // }
+                        foreach (Socket item in Chat_allsocket)
+                        {
+                            if (item != file_listener)
+                                AsynSend(item, get);
+                        }
                         fs.Write(pass, total_bytes, single_bytes);
                         fs.Flush();
                         total_bytes = total_bytes + single_bytes;
@@ -341,6 +351,11 @@ namespace jiwang
             timer1.Stop();
         }
         #endregion
-
+        #region 表情
+        private void E_90_Click(object sender, EventArgs e)
+        {
+            my_txt.Text="--E90--";
+        }
+        #endregion
     }
 }

@@ -190,8 +190,8 @@ namespace jiwang
         {
             Logout();
             this.Hide();
-            Login tmp = new Login();
-            tmp.Show();
+            //Login tmp = new Login();
+            //tmp.Show();
     
         }
         //关闭窗口注销
@@ -199,8 +199,8 @@ namespace jiwang
         {
             Logout();
             this.Hide();
-            Login tmp = new Login();
-            tmp.Show();
+            //Login tmp = new Login();
+            //tmp.Show();
         }
         #endregion
 

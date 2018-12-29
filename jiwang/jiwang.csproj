@@ -83,6 +83,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,6 +97,279 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %281%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %282%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %283%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %284%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %285%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %286%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %287%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %288%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %289%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2810%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2811%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2812%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2813%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2814%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2815%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2816%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2817%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2818%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2819%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2820%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2821%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2822%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2823%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2824%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2825%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2826%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2827%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2828%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2829%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2830%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2831%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2832%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2833%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2834%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2835%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2836%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2837%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2838%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2839%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2840%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2841%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2842%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2843%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2844%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2845%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2846%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2847%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2848%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2849%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2850%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2851%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2852%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2853%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2854%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2855%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2856%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2857%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2858%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2859%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2860%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2861%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2862%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2863%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2864%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2865%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2866%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2867%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2868%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2869%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2870%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2871%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2873%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2874%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2875%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2876%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2877%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2878%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2879%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2880%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2881%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2882%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2883%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2884%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2885%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2886%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2887%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2888%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2889%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2890%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2891%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Face\face %2892%29.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
