@@ -27,7 +27,8 @@ namespace jiwang
         IPAddress User_ip;
         int before=0;
         int after=0;//定时器更新前后的在线人数
-      
+        int listenport = 40000;
+
         string geshi = @"^20[0-9]{8}$";
         //初始化
         public Main(string username, Socket client)
@@ -36,7 +37,9 @@ namespace jiwang
             User_name = username;
             Socket_user = client;
             List_dir = "Data/"+ username+ ".txt";
-
+            //根据学号变端口
+            listenport = 100*Convert.ToInt32(username.Substring(7, 3));
+            //Console.WriteLine(listenport);
             //得到本机IP地址
             IPAddress[] ip_list = Dns.GetHostAddresses(Dns.GetHostName());
             foreach (IPAddress ipAddress in ip_list)
@@ -324,8 +327,7 @@ namespace jiwang
         #region 监听
        
         public void Listen_s()
-        {
-            int listenport = 50000;
+        {           
             Socket tcp_server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             IPEndPoint serverIP = new IPEndPoint(User_ip, listenport);
             tcp_server.Bind(serverIP);//阻塞模式
@@ -380,7 +382,7 @@ namespace jiwang
         public Socket Chat_group(string userid, string broad)
         {
             string ip = IsOnline(userid);
-            IPEndPoint user_ip = new IPEndPoint(IPAddress.Parse(ip), 50000);
+            IPEndPoint user_ip = new IPEndPoint(IPAddress.Parse(ip), listenport);
             Socket user_tcp = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             
             try
