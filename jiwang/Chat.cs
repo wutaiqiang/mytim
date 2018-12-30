@@ -36,6 +36,7 @@ namespace jiwang
             //分割成各个联系人,显示群聊人数
             Username = Users_name.Split(',');
             group_mem.SelectionAlignment = HorizontalAlignment.Center;
+            //显示群聊的所有成员
             group_mem.AppendText("聊天成员\n");         
             for (int i = 0; i < Username.Length; i++)
             {             
@@ -46,7 +47,7 @@ namespace jiwang
             form3_num = con_num;
             AsynRecive(Chat_allsocket);
         }
-        //异步客户端接收信息
+        //接收信息，监听所有的tcp连接
         public void AsynRecive(Socket[] tcpClient)
         {
             byte[] data = new byte[1024];
@@ -108,7 +109,7 @@ namespace jiwang
                                 //写字框占用
                                 while (judge) { };
                                 judge = true;
-                               
+                                //调用函数显示出来
                                 SetText(recieve_mess);
                                 judge = false;
                             }
@@ -130,7 +131,7 @@ namespace jiwang
             }
         }
 
-        //发送信息，自己显示出来
+        //发送信息，自己显示出来（中心节点的发送）
         private void Send_mytxt_Click(object sender, EventArgs e)
         {
             try
@@ -201,7 +202,7 @@ namespace jiwang
             }
         }
         
-        //线程异步发送信息
+        //利用tcp连接发送信息
         public void AsynSend(Socket tcpClient, string message)
         {
             byte[] data = Encoding.UTF8.GetBytes(message);
@@ -284,7 +285,12 @@ namespace jiwang
                 chat_rec.Invoke(set); //委托自身，递归委托，直到不是以invoke方式去访问控件
             }
             else
-            {               
+            {
+                foreach (Socket single_tcp in Chat_allsocket)
+                {
+                   
+                    single_tcp.Close();
+                }
                 this.Close();
             }
         }
@@ -315,21 +321,37 @@ namespace jiwang
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string filename = openFileDialog1.FileName;
-                byte[] file_name = Encoding.UTF8.GetBytes("\n" + filename);//由于无法较好传输文件名，用词
+                byte[] file_name = Encoding.UTF8.GetBytes("\n" + filename);//由于无法较好传输文件名，用
 
                 byte[] data = Encoding.UTF8.GetBytes("--file--");
-                //向所有对象发送
+                //经过所有tcp连接来发送文件
                 foreach (Socket item in Chat_allsocket)
                 {
-                    item.Send(data);//表示要发送文件
-                    item.SendFile(filename, null, null, TransmitFileOptions.UseDefaultWorkerThread);
+                    item.Send(data);//表示要发送文件,发送一个标识
+
+                    byte[] buffer = new byte[500000];
+                    int send = 0; //发送的字节数  
+                    FileStream fsRead = new FileStream(filename, FileMode.OpenOrCreate, FileAccess.Read);                    
+
+                    while (true)  //大文件断点多次传输
+                    {
+                        int r = fsRead.Read(buffer,0, buffer.Length);
+                        if (r == 0)
+                        {
+                            break;
+                        }
+                        item.Send(buffer, 0, r, SocketFlags.None);
+                        send += r;                        
+                    }
+                    //item.SendFile(filename, null, null, TransmitFileOptions.UseDefaultWorkerThread);
                 }
                 foreach (Socket item in Chat_allsocket)
                 {
+                    //发送文件的名字
                     item.Send(file_name);
                 }
                 chat_rec.SelectionAlignment = HorizontalAlignment.Center;
-                chat_rec.AppendText("文件成功发送\n");
+                chat_rec.AppendText("文件正在发送\n");
             }// if (openFileDialog1.ShowDialog() == DialogResult.OK)
             else
             {
@@ -339,7 +361,7 @@ namespace jiwang
         }
         #endregion
 
-        #region 接收文件
+        #region "服务器"接收文件
         public void FileReceive(Socket file_listener)
         {
             DialogResult dr = MessageBox.Show("有文件请求，是否同意？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
@@ -350,6 +372,9 @@ namespace jiwang
             if (dr == DialogResult.OK)//同意接受
             {
                 SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                saveFileDialog1.Title = "保存文件";
+                saveFileDialog1.InitialDirectory = @"C:\Users\Administrator\Desktop";
+                saveFileDialog1.Filter = "文本文件|*.txt|图片文件|*.jpg|视频文件|*.avi|所有文件|*.*";
                 if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     min = 1;
@@ -361,11 +386,13 @@ namespace jiwang
                     {
                         single_bytes = file_listener.Receive(pass, 500000, SocketFlags.None);
                         string get = Encoding.UTF8.GetString(pass, 0, single_bytes);
+                        /*
                         foreach (Socket item in Chat_allsocket)
                         {
                             if (item != file_listener)
                                 AsynSend(item, get);
                         }
+                        */
                         fs.Write(pass, total_bytes, single_bytes);
                         fs.Flush();
                         total_bytes = total_bytes + single_bytes;
@@ -374,6 +401,7 @@ namespace jiwang
                             break;
                         }
                     }
+                    fs.Close();
                 }//if (saveFileDialog.ShowDialog() == DialogResult.OK)打开文件成功
                 chat_rec.SelectionAlignment = HorizontalAlignment.Center;
                 chat_rec.AppendText("文件成功接收\n");
@@ -387,11 +415,13 @@ namespace jiwang
                 {
                     single_bytes = file_listener.Receive(pass, 500000, SocketFlags.None);
                     string get = Encoding.UTF8.GetString(pass, 0, single_bytes);
+                    /*
                     foreach (Socket item in Chat_allsocket)
                     {
                         if (item != file_listener)
                             AsynSend(item, get);
                     }
+                    */
                     total_bytes = total_bytes + single_bytes;
                     if (single_bytes < 500000)//分片结束，接收完毕
                     {

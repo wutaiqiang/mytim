@@ -53,7 +53,7 @@
             // 
             // Btnlogout
             // 
-            this.Btnlogout.Location = new System.Drawing.Point(936, 408);
+            this.Btnlogout.Location = new System.Drawing.Point(936, 387);
             this.Btnlogout.Name = "Btnlogout";
             this.Btnlogout.Size = new System.Drawing.Size(196, 70);
             this.Btnlogout.TabIndex = 2;
@@ -93,7 +93,7 @@
             // 
             // fri_del
             // 
-            this.fri_del.Location = new System.Drawing.Point(936, 286);
+            this.fri_del.Location = new System.Drawing.Point(936, 272);
             this.fri_del.Name = "fri_del";
             this.fri_del.Size = new System.Drawing.Size(196, 69);
             this.fri_del.TabIndex = 6;
@@ -105,24 +105,24 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(31, 688);
+            this.linkLabel1.Location = new System.Drawing.Point(41, 688);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(310, 24);
+            this.linkLabel1.Size = new System.Drawing.Size(106, 24);
             this.linkLabel1.TabIndex = 7;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "是兄弟就来砍我！一刀999！";
+            this.linkLabel1.Text = "官方网站";
             this.linkLabel1.UseWaitCursor = true;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);
             // 
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(424, 688);
+            this.linkLabel2.Location = new System.Drawing.Point(640, 688);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(322, 24);
+            this.linkLabel2.Size = new System.Drawing.Size(106, 24);
             this.linkLabel2.TabIndex = 8;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "介是你没有玩过的船新版本！";
+            this.linkLabel2.Text = "用户论坛";
             this.linkLabel2.UseWaitCursor = true;
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel2_LinkClicked);
             // 

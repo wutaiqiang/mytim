@@ -199,15 +199,19 @@ namespace jiwang
         {
             Logout();
             this.Hide();
+            //this.Close();
+            System.Environment.Exit(0);
             //Login tmp = new Login();
             //tmp.Show();
-    
+
         }
         //关闭窗口注销
         private void Main_FormClosing_1(object sender, FormClosingEventArgs e)
         {
             Logout();
             this.Hide();
+            //this.Close();
+            System.Environment.Exit(0);
             //Login tmp = new Login();
             //tmp.Show();
         }
@@ -320,7 +324,7 @@ namespace jiwang
 
         private void LinkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://lanyue.tanwan.com/");
+            System.Diagnostics.Process.Start("https://club.huawei.com/");
         }
         #endregion
 
@@ -347,7 +351,7 @@ namespace jiwang
                 AsynRecive(tcpClient);//监听信息
             }, null);
         }
-        //启动线程，界面跳转，接受信息
+        //启动线程，界面跳转，接受来自Client的信息,接收聊天请求时直保留与"服务器"的tcp
         public void AsynRecive(Socket tcpClient)
         {
             byte[] data = new byte[1024];
@@ -358,7 +362,7 @@ namespace jiwang
                 {
                     int length = tcpClient.EndReceive(asyncResult);                    
                     string recieve_mess = Encoding.UTF8.GetString(data, 0, data.Length);
-                    Console.WriteLine("server<--<--client:{0}",recieve_mess);
+                    //Console.WriteLine("server<--<--client:{0}",recieve_mess);
                     Socket[] connected_socket = new Socket[1];//配合群聊使用，本来是单个套接字
                     connected_socket[0] = tcpClient;//发起对话的对象
                     //Thread sever_client = new Thread()
@@ -378,11 +382,13 @@ namespace jiwang
             }
         }
 
-        //查找对应的IP，发送广播信息
+        //查找对应的IP，发送广播信息,连接p2p的tcp连接
         public Socket Chat_group(string userid, string broad)
         {
+            int listenport1;
+            listenport1 = 100 * Convert.ToInt32(userid.Substring(7, 3));
             string ip = IsOnline(userid);
-            IPEndPoint user_ip = new IPEndPoint(IPAddress.Parse(ip), listenport);
+            IPEndPoint user_ip = new IPEndPoint(IPAddress.Parse(ip), listenport1);
             Socket user_tcp = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             
             try
@@ -431,14 +437,14 @@ namespace jiwang
                         if (item1.SubItems[1].Text != item.SubItems[1].Text)
                             broad_mess = broad_mess + "," + item1.SubItems[1].Text;
                     }
-                    //所有参与对话者，用来建立线程
+                    //对话的两个对象，用来建立线程
                     headpart = headpart + "," + item.SubItems[1].Text;
                     //发送board信息
                     clients[connect_num] = Chat_group(item.SubItems[1].Text, broad_mess);//群聊
                     connect_num++;
                 }
                 
-                //开启对话框，多线程，开始对话
+                //开启对话框，传递刚刚建立好的多个线程，开始对话
                 Thread server_client_connection = new Thread(() => Application.Run(new Chat(headpart, clients, connect_num)));
                 server_client_connection.SetApartmentState(System.Threading.ApartmentState.STA);//单线程监听控制
                 server_client_connection.Start();
